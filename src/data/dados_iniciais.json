@@ -2,36 +2,36 @@
   "categorias": [
     {
       "titulo": "Teoria Libertária",
-      "link": "https://www.alura.com.br/formacao-front-end",
-      "cor": "#6BD1FF",
+      "link": "https://bibliotecalibertaria.com/",
+      "cor": "black",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "LIVROS E ARTIGOS DA TEORIA LIBERTÁRIA - CLIQUE AQUI",
+        "url": "https://bibliotecalibertaria.com/"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "O QUE DEFENDEM OS LIBERTÁRIOS?",
+          "url": "https://www.youtube.com/watch?v=bYS3zZSJgMc&t=24s"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "O que é o anarcocapitalismo?",
+          "url": "https://www.youtube.com/watch?v=NsjqzGyTUKs"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "O que é economia?",
+          "url": "https://www.youtube.com/watch?v=5vCOhPrlRUs"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Educação estatal: A estratégia de perpetuação do Estado",
+          "url": "https://www.youtube.com/watch?v=Elb2uDdDL60"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Imposto é roubo?",
+          "url": "https://www.youtube.com/watch?v=PzPlg0Oxi8o"
         },
         {
-          "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+          "titulo": "O que o Estado é?",
+          "url": "https://www.youtube.com/watch?v=wLvzVBZ0Mbc"
         },
         {
           "titulo": "Novidades do Angular v9",
