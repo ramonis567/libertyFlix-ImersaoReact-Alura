@@ -5,12 +5,7 @@ import App from './App';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import CadastroVideo from './pages/CadastroVideo';
 import CadastroCategoria from './pages/CadastroCategoria';
-
-function E404(){
-  return (
-    <div><h1>Página - Erro 404</h1></div>
-  )
-}
+import E404 from "./pages/E404"
 
 
 ReactDOM.render(
