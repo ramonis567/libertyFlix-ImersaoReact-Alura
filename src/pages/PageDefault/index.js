@@ -4,8 +4,8 @@ import Footer from '../../components/Footer';
 import styled from 'styled-components';
 
 const Main = styled.main`
-  background-color: #141414;
-  color: white;
+  background-color: #f1f1f1;
+  color: black;
   flex: 1;
   padding-top: 50px;
   padding-right: 5%;
