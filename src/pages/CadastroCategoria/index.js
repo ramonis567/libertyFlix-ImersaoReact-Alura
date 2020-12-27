@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import PageDefault from '../PageDefault';
 import { Link } from 'react-router-dom';
+import Button from '../../components/Button';
+import Swal from 'sweetalert2';
+import './CadastroCategoria.css';
 
 export default function CadastroCategoria() {
   const initialValues = {
@@ -25,10 +28,22 @@ export default function CadastroCategoria() {
   function handleSubmit(event){
     event.preventDefault();
     if(values.name === "" || values.description === ""){
-      alert("PREENCHA TODOS OS CAMPOS!");
+      Swal.fire({
+        title: "Erro!",
+        text: 'Preencha todos os campos!',
+        icon: 'error',
+        confirmButtonText: 'Tentar novamente'
+      })
+      //alert("PREENCHA TODOS OS CAMPOS!");
     }else{
       setCategorias([values, ...categorias]);
-      setValues(initialValues);    
+      setValues(initialValues);
+      Swal.fire({
+        icon: 'success',
+        title: 'Categoria salva!',
+        showConfirmButton: false,
+        timer: 1500
+      })
     }
   }
 
@@ -37,25 +52,50 @@ export default function CadastroCategoria() {
       
       <h1>Cadastro de Categoria: <em>{values.name}</em></h1>
 
-      <form style={{ background: values.color, color: "white"}} onSubmit={handleSubmit}>
-        <div>
-          <label>Nome da Categoria: 
-            <input type="text" value={values.name} name="name" onChange={handleChange}/>
+      <form 
+        style={{ background: "black", color: "white", display:"block" }} 
+        onSubmit={handleSubmit}
+      >
+
+        <div className="InputDiv">
+          <input
+            placeholder="Nome da Categoria"
+            className="InputField" 
+            type="text" 
+            value={values.name} 
+            name="name" 
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="InputDiv">
+          <input
+            placeholder="Descrição"
+            className="InputField InputTextArea" 
+            type="text" 
+            value={values.description} 
+            name="description"               
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="InputDiv">
+          <label style={{ fontSize: "26px"}}>Cor:
+            <input
+              placeholder="Cor:"
+              className="InputField InputColor" 
+              type="color" 
+              value={values.color} 
+              name="color" 
+              onChange={handleChange} 
+              placeholder="Cor:"
+            />
           </label>
         </div>
-        <div>
-          <label>Descrição: 
-            <textarea type="text" value={values.description} name="description" onChange={handleChange}/>
-          </label>
-        </div>
-        <div>
-          <label>Cor: 
-            <input type="color" value={values.color} name="color" onChange={handleChange}/>
-          </label>
-        </div>
-        <button>
+
+        <Button style={{ padding: "5px" }}>
           CADASTRAR
-        </button>
+        </Button>
       </form>
 
       <ul>

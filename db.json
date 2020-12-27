@@ -1,0 +1,22 @@
+{
+  "categorias":[
+    {
+      "id": 1,
+      "nome": "Teoria Libertária",
+      "descricao": "Descricao da categoria teoria libertária",
+      "cor": "black"
+    },
+    {
+      "id": 2,
+      "nome": "Economia Austríaca",
+      "descricao": "Descricao da categoria economia",
+      "cor": "yellow"
+    },
+    {
+      "id": 3,
+      "nome": "Criptoeconomia",
+      "descricao": "Descricao da categoria criptoeconomia",
+      "cor": "blue"
+    }
+  ]
+}
