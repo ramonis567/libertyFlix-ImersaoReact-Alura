@@ -54,7 +54,7 @@ export default function CadastroCategoria() {
     fetch(URL_TOP).then(async (serverReturn) => {
       const data = await serverReturn.json();
       setCategorias([
-        ...data, 
+        ...data,   
       ]);
     });
   }, []);
