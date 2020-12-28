@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../PageDefault';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
@@ -46,6 +46,18 @@ export default function CadastroCategoria() {
       })
     }
   }
+
+  useEffect(() => {
+    console.log("Mudanças");
+    const URL_TOP = "http://localhost:8080/categorias/";
+
+    fetch(URL_TOP).then(async (serverReturn) => {
+      const data = await serverReturn.json();
+      setCategorias([
+        ...data, 
+      ]);
+    });
+  }, []);
 
   return (
     <PageDefault>
@@ -97,6 +109,14 @@ export default function CadastroCategoria() {
           CADASTRAR
         </Button>
       </form>
+
+      {
+        categorias.length === 0 && (
+          <div>
+            Carregando...
+          </div>
+        )
+      }
 
       <ul>
         {categorias.map((categoria, index) => {
