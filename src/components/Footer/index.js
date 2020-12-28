@@ -4,7 +4,7 @@ import { FooterBase } from './styles';
 function Footer() {
   return (
     <FooterBase>
-      <a href="https://2hr.tech" target="_blank" rel="noreferrer">
+      <a href="https://raw.githubusercontent.com/ramonis567/libertyFlix-ImersaoReact-Alura/main/src/assets/img/Logo2.svg" target="_blank" rel="noreferrer">
         <img src="../../assets/img/Logo2.svg" alt="Logo 2HR Tech"/>
       </a>
       <p>
