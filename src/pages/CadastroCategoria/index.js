@@ -48,7 +48,6 @@ export default function CadastroCategoria() {
   }
 
   useEffect(() => {
-    console.log("Mudanças");
     const URL_TOP = "https://libertyflix.herokuapp.com/categorias";
 
     fetch(URL_TOP).then(async (serverReturn) => {

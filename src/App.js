@@ -1,11 +1,33 @@
-import React from 'react';
-import dadosIniciais from './data/dados_iniciais.json';
+import React, { useEffect, useState } from 'react';
+//import dadosIniciais from './data/dados_iniciais.json';
 import Menu from './components/Menu';
 import Carousel from './components/Carousel';
 import BannerMain from './components/BannerMain';
 import Footer from './components/Footer';
+import Swal from 'sweetalert2';
 
 function App() {
+  const [dadosIniciais, setDadosIniciais] = useState([]);
+
+  useEffect(() => {
+    const URL_TOP = "https://libertyflix.herokuapp.com/categorias?_embed=videos";
+
+    fetch(URL_TOP).then(async (serverReturn) => {
+      if(serverReturn.ok){
+        const data = await serverReturn.json();
+        setDadosIniciais(data);
+      }else {
+        console.log("Erro server");
+        // Swal.fire({
+        //   title: "Erro!",
+        //   text: 'Servidor fora do ar, tente novamente mais tarde!',
+        //   icon: 'error',
+        //   timer: 4000
+        // });
+      }
+    });
+  }, [])
+
   return (
     <div style={{ background: "#141414" }}>
       <Menu />
@@ -27,19 +49,7 @@ function App() {
 
       <Carousel
         category={dadosIniciais.categorias[2]}
-      />      
-
-      <Carousel
-        category={dadosIniciais.categorias[3]}
-      />      
-
-      <Carousel
-        category={dadosIniciais.categorias[4]}
-      />      
-
-      <Carousel
-        category={dadosIniciais.categorias[5]}
-      />      
+      />          
 
       <Footer />
       

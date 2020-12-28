@@ -6,9 +6,9 @@ function Footer() {
     <FooterBase>
       <a href="https://2hr.tech" target="_blank" rel="noreferrer">
         <img 
-          src="https://raw.githubusercontent.com/ramonis567/libertyFlix-ImersaoReact-Alura/main/src/assets/img/Logo2.svg" 
-          width="100px" 
-          height="60px" 
+          src="https://raw.githubusercontent.com/ramonis567/libertyFlix-ImersaoReact-Alura/main/src/assets/img/Logo2.png" 
+          width="200px" 
+          height="100px" 
           alt="Logo 2HR Tech"
         />
       </a>
