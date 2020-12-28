@@ -8,7 +8,7 @@ function Footer() {
         <img 
           src="https://raw.githubusercontent.com/ramonis567/libertyFlix-ImersaoReact-Alura/main/src/assets/img/Logo2.png" 
           width="200px" 
-          height="100px" 
+          height="70px" 
           alt="Logo 2HR Tech"
         />
       </a>
