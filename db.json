@@ -18,5 +18,98 @@
       "description": "descricao da categoria criptoeconomia",
       "color": "blue"
     }
+  ],
+
+  "videos":[
+    {
+      "id": 1,
+      "categoria": 1,
+      "title": "O QUE DEFENDEM OS LIBERTÁRIOS?",
+      "url": "https://www.youtube.com/watch?v=bYS3zZSJgMc&t=24s"
+    },
+    {
+      "id": 2,
+      "categoria": 1,
+      "title": "O que é o anarcocapitalismo?",
+      "url": "https://www.youtube.com/watch?v=NsjqzGyTUKs"
+    },
+    {
+      "id": 3,
+      "categoria": 1,
+      "title": "O que é economia?",
+      "url": "https://www.youtube.com/watch?v=5vCOhPrlRUs"
+    },
+    {
+      "id": 4,
+      "categoria": 1,
+      "title": "Educação estatal: A estratégia de perpetuação do Estado",
+      "url": "https://www.youtube.com/watch?v=Elb2uDdDL60"
+    },
+    {
+      "id": 5,
+      "categoria": 1,
+      "title": "Imposto é roubo?",
+      "url": "https://www.youtube.com/watch?v=PzPlg0Oxi8o"
+    },
+    {
+      "id": 6,
+      "categoria": 1,
+      "title": "O que o Estado é?",
+      "url": "https://www.youtube.com/watch?v=wLvzVBZ0Mbc"
+    },
+    {
+      "id": 7,
+      "categoria": 2,
+      "title": "Interestellar",
+      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+    },
+    {
+      "id": 8,
+      "categoria": 2,
+      "title": "Gattaca",
+      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+    },
+    {
+      "id": 9,
+      "categoria": 2,
+      "title": "A Chegada",
+      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+    },
+    {
+      "id": 10,
+      "categoria": 2,
+      "title": "Feitiço do Tempo",
+      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+    },
+    {
+      "id": 11,
+      "categoria": 3,
+      "title": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
+      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+    },
+    {
+      "id": 12,
+      "categoria": 3,
+      "title": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
+      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+    },
+    {
+      "id": 13,
+      "categoria": 3,
+      "title": "Programei 4 robôs que criam vídeos para mim no YouTube",
+      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+    },
+    {
+      "id": 14,
+      "categoria": 3,
+      "title": "API: Dicionário do Programador",
+      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+    }, 
+    {
+      "id": 15,
+      "categoria": 3,
+      "title": "Usando Git Direito",
+      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+    }
   ]
 }
