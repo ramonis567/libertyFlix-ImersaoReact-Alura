@@ -4,6 +4,10 @@
       "id": 1,
       "name": "Teoria Libertária",
       "description": "descricao da categoria teoria libertária",
+      "extralink": {
+        "text": "Livros e Artigos de Cunho Libertário - Biblioteca Libertária",
+        "url": "https://bibliotecalibertaria.com/"
+      },
       "color": "black"
     },
     {
@@ -16,7 +20,7 @@
       "id": 3,
       "name": "Criptoeconomia",
       "description": "descricao da categoria criptoeconomia",
-      "color": "blue"
+      "color": "red"
     }
   ],
 

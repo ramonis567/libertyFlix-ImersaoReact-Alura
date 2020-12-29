@@ -23,11 +23,11 @@ export default function BannerMain({
       <ContentAreaContainer>
         <ContentAreaContainer.Item>
           <ContentAreaContainer.Title>
-            {videoTitle}
+            <b>{videoTitle}</b>
           </ContentAreaContainer.Title>
 
           <ContentAreaContainer.Description>
-            {videoDescription}
+            <b>{videoDescription}</b>
           </ContentAreaContainer.Description>
         </ContentAreaContainer.Item>
 

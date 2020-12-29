@@ -12,8 +12,9 @@ export default function CadastroVideo() {
     title: '',
     url: '',
   }
-  //const [categorias, setCategorias] = useState([]);
   const [values, setValues] = useState(initialValues);
+  const [categorias, setCategorias] = useState([]);
+
 
   function setValue(key, value){
     setValues({
@@ -23,43 +24,40 @@ export default function CadastroVideo() {
   }
   
   function handleChange(event){
-    setValue(event.target.getAttribute("title"), event.target.value);
+    setValue(event.target.getAttribute("name"), event.target.value);
   }
 
   function handleSubmit(event){
     event.preventDefault();
     if(values.categoria === "" || values.title === "" || values.url === ""){
       Swal.fire({
-        title: "Erro!",
-        text: 'Preencha todos os campos!',
+        title: "Você deixou um ou mais campos vazios!",
         icon: 'error',
-        confirmButtonText: 'Tentar novamente'
-      })
-      //alert("PREENCHA TODOS OS CAMPOS!");
+        confirmButtonText: 'Retornar ao cadastro'
+      });
     }else{
-      //setCategorias([values, ...categorias]);
       setValues(initialValues);
       Swal.fire({
         icon: 'success',
-        title: `Vídeo salvo em ${values.categoria}!`,
-        showConfirmButton: false,
-        timer: 3000
+        title: `Vídeo salvo em "${values.categoria}"!`,
+        timer: 3000,
+        html:"<a href='../../'>Retornar a Home</a>",
+        confirmButtonText: "Cadastrar mais um vídeo",
       })
     }
   }
 
   useEffect(() => {
-    console.log("Mudanças");
-    const URL_TOP = "";
+    const URL_TOP = "https://libertyflix.herokuapp.com/categorias";
 
     fetch(URL_TOP).then(async (serverReturn) => {
       const data = await serverReturn.json();
-      console.log(data);
-      //setCategorias([
-      //  ...data,   
-      //]);
+      setCategorias([
+        ...data,   
+      ]);
     });
   }, []);
+
   return (
     <PageDefault>
       <h1>Cadastro de Vídeo: </h1>
@@ -70,22 +68,37 @@ export default function CadastroVideo() {
       >
 
         <div className="InputDiv">
-          <input
-            placeholder="Seleção de Categoria"
+          <select
+            placeholder="Selecione a Categoria"
             className="InputField InputTextArea" 
-            type="text" 
-            value={values.description} 
-            name="description"               
+            value={values.categoria} 
+            name="categoria"               
             onChange={handleChange}
-          />
+          >
+            {
+              categorias.length === 0 && (
+                <option>
+                  Carregando...
+                </option>
+              )
+            }
+
+            {
+              categorias.length >= 1 && (
+                categorias.map((categoria) => {
+                  return <option value={categoria.id}>{categoria.name}</option>
+                })
+              )
+            }
+          </select>
         </div>
         <div className="InputDiv">
           <input
             placeholder="Título"
             className="InputField" 
             type="text" 
-            value={values.name} 
-            name="name" 
+            value={values.title} 
+            name="title" 
             onChange={handleChange}
           />
         </div>
@@ -95,8 +108,8 @@ export default function CadastroVideo() {
             placeholder="URL do Vídeo"
             className="InputField InputTextArea" 
             type="text" 
-            value={values.description} 
-            name="description"               
+            value={values.url} 
+            name="url"               
             onChange={handleChange}
           />
         </div>

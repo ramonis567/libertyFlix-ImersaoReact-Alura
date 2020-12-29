@@ -53,3 +53,14 @@ export const VideoCardGroupContainer = styled.section`
   margin-left: 5%;
   margin-bottom: 16px;
 `;
+
+export const Description = styled.p`
+  margin-top: 0px;
+  margin-left: 10px;
+  text-decoration: none;
+  @media (max-width: 800px) {
+    display: block;
+    margin-bottom: 16px;
+    margin-left: 0;
+  } 
+`

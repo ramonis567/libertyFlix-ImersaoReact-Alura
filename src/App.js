@@ -30,7 +30,6 @@ function App() {
 
   return (
     <div style={{ background: "#090909" }}>
-      <Menu />
 
       {dadosIniciais.length === 0 && (
         <div class="psoload">
@@ -43,6 +42,8 @@ function App() {
 
       {dadosIniciais.length >= 1 && (
         <>
+          <Menu />
+
           {console.log(dadosIniciais[0].videos[0].title)}
           <BannerMain 
             videoTitle={dadosIniciais[0].videos[0].title}
@@ -62,10 +63,12 @@ function App() {
           <Carousel 
             category={dadosIniciais[2]}
           />
+
+          <div className="space"></div>
+          
+          <Footer/>
         </>
       )}
-      <div className="space"></div>
-      <Footer/>
       
     </div>
   );
