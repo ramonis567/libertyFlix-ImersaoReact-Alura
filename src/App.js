@@ -5,6 +5,7 @@ import Carousel from './components/Carousel';
 import BannerMain from './components/BannerMain';
 import Footer from './components/Footer';
 import Swal from 'sweetalert2';
+import "./App.css";
 
 function App() {
   const [dadosIniciais, setDadosIniciais] = useState([]);
@@ -17,41 +18,54 @@ function App() {
         const data = await serverReturn.json();
         setDadosIniciais(data);
       }else {
-        console.log("Erro server");
-        // Swal.fire({
-        //   title: "Erro!",
-        //   text: 'Servidor fora do ar, tente novamente mais tarde!',
-        //   icon: 'error',
-        //   timer: 4000
-        // });
+        Swal.fire({
+          title: "Erro!",
+          text: 'Servidor fora do ar, tente novamente mais tarde!',
+          icon: 'error',
+          timer: 4000
+        });
       }
     });
   }, [])
 
   return (
-    <div style={{ background: "#141414" }}>
+    <div style={{ background: "#090909" }}>
       <Menu />
 
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={"O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa!"}
-      />
+      {dadosIniciais.length === 0 && (
+        <div class="psoload">
+          <div class="straight"></div>
+          <div class="curve"></div>
+          <div class="center"></div>
+          <div class="inner"></div>
+        </div>
+      )}
 
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[0]}
-      />
+      {dadosIniciais.length >= 1 && (
+        <>
+          {console.log(dadosIniciais[0].videos[0].title)}
+          <BannerMain 
+            videoTitle={dadosIniciais[0].videos[0].title}
+            url={dadosIniciais[0].videos[0].url}
+            videoDescription={"Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem"}
+          />
 
-      <Carousel
-        category={dadosIniciais.categorias[1]}
-      />
+          <Carousel 
+            ignoreFirstVideo
+            category={dadosIniciais[0]}
+          />
 
-      <Carousel
-        category={dadosIniciais.categorias[2]}
-      />          
+          <Carousel 
+            category={dadosIniciais[1]}
+          />
 
-      <Footer />
+          <Carousel 
+            category={dadosIniciais[2]}
+          />
+        </>
+      )}
+      <div className="space"></div>
+      <Footer/>
       
     </div>
   );
