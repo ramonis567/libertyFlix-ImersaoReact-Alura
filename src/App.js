@@ -29,7 +29,7 @@ function App() {
   }, [])
 
   return (
-    <div style={{ background: "#090909" }}>
+    <div style={{ background: "#1c1d1f" }}>
 
       {dadosIniciais.length === 0 && (
         <div class="psoload">

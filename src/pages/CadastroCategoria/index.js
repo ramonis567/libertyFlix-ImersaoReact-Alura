@@ -45,8 +45,10 @@ export default function CadastroCategoria() {
       Swal.fire({
         icon: 'success',
         title: 'Categoria salva!',
-        showConfirmButton: false,
-        timer: 1500
+        html:"<a href='../../'>Retornar a Home</a>",
+        showConfirmButton: true,
+        confirmButtonText: "Continuar aqui",
+        timer: 10*1000
       })
     }
   }
@@ -82,7 +84,7 @@ export default function CadastroCategoria() {
           timer: 15*1000,
           html:"<a href='../../'>Retornar a Home</a>",
           confirmButtonColor: "red",
-          confirmButtonText: "Continuar na página de cadastro de vídeos",
+          confirmButtonText: "Continuar na página de cadastro de categoria",
         })
       }
     })
@@ -94,7 +96,14 @@ export default function CadastroCategoria() {
       <h1>Cadastro de Categoria: <em>{values.name}</em></h1>
 
       <form 
-        style={{ background: "black", color: "white", display:"block" }} 
+        style={{ 
+          background: "#303335", 
+          color: "white", 
+          display:"block", 
+          padding: "4vh",
+          border: `3px solid ${values.color}`,
+          borderRadius: "10px"
+        }} 
         onSubmit={handleSubmit}
       >
 
@@ -134,10 +143,12 @@ export default function CadastroCategoria() {
           </label>
         </div>
 
-        <Button style={{ padding: "5px" }}>
+        <Button style={{ padding: "5px", marginTop: "10px" }}>
           CADASTRAR
         </Button>
       </form>
+
+      <h3>Categorias Cadastradas:</h3>
 
       {
         categorias.length === 0 && (
@@ -147,11 +158,15 @@ export default function CadastroCategoria() {
         )
       }
 
-      <ul>
-        {categorias.map((categoria, index) => {
-          return <li key={`${categoria}${index}`}>{categoria.name}</li>
-        })}
-      </ul>
+      {
+        categorias.length > 0 && (
+          
+          <ul>
+            {categorias.map((categoria, index) => {
+              return <li key={`${categoria}${index}`}>{categoria.name}</li>
+            })}
+          </ul>)
+      }
 
       <div>
       <Link to="/" style={{marginRight: "2%"}}>

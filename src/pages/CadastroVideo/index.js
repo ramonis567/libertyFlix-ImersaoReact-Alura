@@ -45,7 +45,7 @@ export default function CadastroVideo() {
         title: `Vídeo salvo!`,
         timer: 10*1000,
         html:"<a href='../../'>Retornar a Home</a>",
-        confirmButtonText: "Cadastrar mais um vídeo",
+        confirmButtonText: "Continuar aqui",
       })
       setValues(initialValues);
     }
@@ -93,7 +93,14 @@ export default function CadastroVideo() {
       <h1>Cadastro de Vídeo: </h1>
 
       <form
-        style={{ background: "black", color: "white", display:"block" }} 
+        style={{ 
+            background: "#303335", 
+            color: "white", 
+            display:"block", 
+            padding:"4vh",
+            border: "3px solid black",
+            borderRadius: "10px"
+        }} 
         onSubmit={handleSubmit}
       >
 
@@ -144,7 +151,7 @@ export default function CadastroVideo() {
           />
         </div>
 
-        <Button style={{ padding: "5px" }}>
+        <Button style={{ padding: "5px", marginTop: "10px" }}>
           SALVAR VÍDEO
         </Button>
         

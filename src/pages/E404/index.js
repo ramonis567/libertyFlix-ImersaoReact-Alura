@@ -8,7 +8,7 @@ export default function index() {
         <p>Ops...</p>
         <p>ERRO 404</p>
         <p>Página não encontrada</p>
-        <p>EM CONSTRUÇÃO</p>
+        <p> ----------------- EM CONSTRUÇÃO</p>
       </div>
     </PageDefault>
   )

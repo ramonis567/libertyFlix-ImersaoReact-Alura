@@ -39,3 +39,7 @@ form {
 .InputTextArea {
   min-height: 60px;
 }
+
+.InputColor {
+  width: 20%;
+}
