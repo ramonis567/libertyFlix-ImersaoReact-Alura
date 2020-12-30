@@ -38,7 +38,7 @@ export default function CadastroVideo() {
       createVideo({
         title: values.title,
         url: values.url,
-        categoriaId: values.categoria,
+        categoriaId: parseInt(values.categoria),
       });
       Swal.fire({
         icon: 'success',
@@ -75,6 +75,15 @@ export default function CadastroVideo() {
       if (respostaDoServidor.ok) {
         const resposta = await respostaDoServidor.json();
         return resposta;
+      } else {
+        Swal.fire({ //Não sei se está funcionando, desenvolver teste
+          icon: 'question',
+          title: `Tivemos um problema para enviar seus dados, aguarde ou tente novamente!`,
+          timer: 15*1000,
+          html:"<a href='../../'>Retornar a Home</a>",
+          confirmButtonColor: "red",
+          confirmButtonText: "Continuar na página de cadastro de vídeos",
+        })
       }
     })
   }
