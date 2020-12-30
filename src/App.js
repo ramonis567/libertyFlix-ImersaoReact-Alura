@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-//import dadosIniciais from './data/dados_iniciais.json';
+//import dadosIniciais from './data/dados_iniciais.json'; // dados para teste
 import Menu from './components/Menu';
 import Carousel from './components/Carousel';
 import BannerMain from './components/BannerMain';
