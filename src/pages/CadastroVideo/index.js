@@ -5,7 +5,6 @@ import Button from '../../components/Button';
 import Swal from 'sweetalert2';
 import './CadastroVideo.css';
 
-
 export default function CadastroVideo() {
   const initialValues = {
     categoria: '',
@@ -36,27 +35,49 @@ export default function CadastroVideo() {
         confirmButtonText: 'Retornar ao cadastro'
       });
     }else{
-      setValues(initialValues);
+      createVideo({
+        title: values.title,
+        url: values.url,
+        categoriaId: values.categoria,
+      });
       Swal.fire({
         icon: 'success',
-        title: `Vídeo salvo em "${values.categoria}"!`,
-        timer: 3000,
+        title: `Vídeo salvo!`,
+        timer: 10*1000,
         html:"<a href='../../'>Retornar a Home</a>",
         confirmButtonText: "Cadastrar mais um vídeo",
       })
+      setValues(initialValues);
     }
   }
 
   useEffect(() => {
-    const URL_TOP = "https://libertyflix.herokuapp.com/categorias";
+    const URL_CAT = "https://libertyflix.herokuapp.com/categorias";
 
-    fetch(URL_TOP).then(async (serverReturn) => {
+    fetch(URL_CAT).then(async (serverReturn) => {
       const data = await serverReturn.json();
       setCategorias([
         ...data,   
       ]);
     });
   }, []);
+
+  function createVideo(data){
+    const URL_VID = "https://libertyflix.herokuapp.com/videos";
+
+    return fetch(`${URL_VID}?_embed=videos`, {
+      method: "POST",
+      headers: {
+        "Content-type":"application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      }
+    })
+  }
 
   return (
     <PageDefault>
@@ -84,7 +105,7 @@ export default function CadastroVideo() {
             }
 
             {
-              categorias.length >= 1 && (
+              categorias.length > 0 && ( //Bug na primeira opção - Corrigir futuramente
                 categorias.map((categoria) => {
                   return <option value={categoria.id}>{categoria.name}</option>
                 })
