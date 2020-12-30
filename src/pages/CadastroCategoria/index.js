@@ -34,8 +34,12 @@ export default function CadastroCategoria() {
         icon: 'error',
         confirmButtonText: 'Tentar novamente'
       })
-      //alert("PREENCHA TODOS OS CAMPOS!");
     }else{
+      createCategoria({
+        name: values.name,
+        description: values.description,
+        color: values.color,
+      });
       setCategorias([values, ...categorias]);
       setValues(initialValues);
       Swal.fire({
@@ -57,6 +61,32 @@ export default function CadastroCategoria() {
       ]);
     });
   }, []);
+
+  function createCategoria(data){
+    const URL_CAT = "https://libertyflix.herokuapp.com/categorias";
+
+    return fetch(`${URL_CAT}?_embed=videos`, {
+      method: "POST",
+      headers: {
+        "Content-type":"application/json",
+      },
+      body: JSON.stringify(data),
+    }).then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      } else {
+        Swal.fire({ //Não sei se está funcionando, desenvolver teste
+          icon: 'question',
+          title: `Tivemos um problema para enviar seus dados, aguarde ou tente novamente!`,
+          timer: 15*1000,
+          html:"<a href='../../'>Retornar a Home</a>",
+          confirmButtonColor: "red",
+          confirmButtonText: "Continuar na página de cadastro de vídeos",
+        })
+      }
+    })
+  }
 
   return (
     <PageDefault>

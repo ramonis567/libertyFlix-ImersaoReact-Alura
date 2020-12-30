@@ -51,18 +51,11 @@ function App() {
             videoDescription={"Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem"}
           />
 
-          <Carousel 
-            ignoreFirstVideo
-            category={dadosIniciais[0]}
-          />
-
-          <Carousel 
-            category={dadosIniciais[1]}
-          />
-
-          <Carousel 
-            category={dadosIniciais[2]}
-          />
+          {
+            dadosIniciais.map((dadosIniciais) => {
+              return <Carousel category={dadosIniciais} />
+            })
+          }
 
           <div className="space"></div>
           
