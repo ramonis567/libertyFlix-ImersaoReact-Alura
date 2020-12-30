@@ -48,7 +48,7 @@ function App() {
           <BannerMain 
             videoTitle={dadosIniciais[0].videos[0].title}
             url={dadosIniciais[0].videos[0].url}
-            videoDescription={"Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem"}
+            videoDescription={"O anarcocapitalismo ou anarquismo de livre mercado de uma forma simplificada, é uma vertente radical do liberalismo, e como o próprio nome já indica, é caracterizada por defender a anarquia, ou seja, os anarcocapitalistas entendem que a existência do Estado como instituição é completamente desfavorável e interfere negativamente nas liberdades do ser humano, e portanto na visão anarcocapitalista quaisquer formas de governo são ilegítimas e consequentemente devem ser extinguidas, só que de forma antagônica as ideias anarquistas de viés marxista, o anarcocapitalismo assume o capitalismo como sistema econômico."}
           />
 
           {

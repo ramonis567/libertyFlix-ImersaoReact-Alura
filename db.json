@@ -3,7 +3,7 @@
     {
       "id": 0,
       "name": "Teoria Libertária",
-      "description": "descricao da categoria teoria libertária",
+      "description": "Compilado de vídeos sobre a teoria libertária. Esta categoria contém vídeos de todos os níveis, produzidos por diversos produtores de conteúdo Libertários, e abrange toda a teoria Libertária Básica. Há vídeos que explicam desde a fundamentação ética do libertarianismo à apresentação de cenários e como uma sociedade libertária de leis privadas funcionaria ou procederia nesse cenário.",
       "extralink": {
         "text": "Livros e Artigos de Cunho Libertário - Biblioteca Libertária",
         "url": "https://bibliotecalibertaria.com/"
@@ -12,14 +12,14 @@
     },
     {
       "id": 1,
-      "name": "Economia Austríaca",
-      "description": "descricao da categoria economia",
+      "name": "Escola Austríaca de Economia",
+      "description": "Vídeos sobre a Escola Austríaca de Economia: Compilado de vídeos teóricos e explicativos sobre Escola Austríaca de Economia. Abrangendo todos os principais economistas austríacos, como: Carl Menger, Ludwig V. Mises, F. A. Hayek, Murray Rothbard, H. H. Hoppe, dentre outros. E até alguns dos precursores, como: Juan de Mariana e R. Cantillon",
       "color": "blue"
     },
     {
       "id": 2,
       "name": "Criptoeconomia",
-      "description": "descricao da categoria criptoeconomia",
+      "description": "Vídeos ",
       "color": "red"
     }
   ],
@@ -28,7 +28,7 @@
     {
       "id": 1,
       "categoriaId": 0,
-      "title": "O QUE DEFENDEM OS LIBERTÁRIOS?",
+      "title": "O QUE É O ANARCOCAPITALISMO? - Lobo Conservador",
       "url": "https://www.youtube.com/watch?v=bYS3zZSJgMc&t=24s"
     },
     {
