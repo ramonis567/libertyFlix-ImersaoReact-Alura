@@ -13,13 +13,13 @@
     {
       "id": 1,
       "name": "Escola Austríaca de Economia",
-      "description": "Vídeos sobre a Escola Austríaca de Economia: Compilado de vídeos teóricos e explicativos sobre Escola Austríaca de Economia. Abrangendo todos os principais economistas austríacos, como: Carl Menger, Ludwig V. Mises, F. A. Hayek, Murray Rothbard, H. H. Hoppe, dentre outros. E até alguns dos precursores, como: Juan de Mariana e R. Cantillon",
+      "description": "Compilado de vídeos teóricos e explicativos sobre Escola Austríaca de Economia. Abrangendo todos os principais economistas austríacos, como: Carl Menger, Ludwig V. Mises, F. A. Hayek, Murray Rothbard, H. H. Hoppe, dentre outros. E até alguns dos precursores, como: Juan de Mariana e R. Cantillon",
       "color": "blue"
     },
     {
       "id": 2,
-      "name": "Criptoeconomia",
-      "description": "Vídeos ",
+      "name": "Ética Libertária",
+      "description": "Jusitificação Ética do Libertarianismo",
       "color": "red"
     }
   ],
@@ -28,92 +28,92 @@
     {
       "id": 1,
       "categoriaId": 0,
-      "title": "O QUE É O ANARCOCAPITALISMO? - Lobo Conservador",
-      "url": "https://www.youtube.com/watch?v=bYS3zZSJgMc&t=24s"
+      "title": "O QUE É O ANARCOCAPITALISMO? - Ancap.Su/Visão Libertária",
+      "url": "https://www.youtube.com/watch?v=NsjqzGyTUKs"
     },
     {
       "id": 2,
       "categoriaId": 0,
-      "title": "O que é o anarcocapitalismo?",
-      "url": "https://www.youtube.com/watch?v=NsjqzGyTUKs"
+      "title": "O que defendem os libertários? - Lobo Conservador",
+      "url": "https://www.youtube.com/watch?v=bYS3zZSJgMc&t=24s"
     },
     {
       "id": 3,
       "categoriaId": 0,
-      "title": "O que é economia?",
+      "title": "O que é economia? - Ancap.Su",
       "url": "https://www.youtube.com/watch?v=5vCOhPrlRUs"
     },
     {
       "id": 4,
       "categoriaId": 0,
-      "title": "Educação estatal: A estratégia de perpetuação do Estado",
+      "title": "Educação estatal: A estratégia de perpetuação do Estado - O Desestatista",
       "url": "https://www.youtube.com/watch?v=Elb2uDdDL60"
     },
     {
       "id": 5,
       "categoriaId": 0,
-      "title": "Imposto é roubo?",
+      "title": "Imposto é roubo? - Ancap.Su",
       "url": "https://www.youtube.com/watch?v=PzPlg0Oxi8o"
     },
     {
       "id": 6,
       "categoriaId": 0,
-      "title": "O que o Estado é?",
+      "title": "O que o Estado é? - Rothgirl",
       "url": "https://www.youtube.com/watch?v=wLvzVBZ0Mbc"
     },
     {
       "id": 7,
       "categoriaId": 1,
-      "title": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+      "title": "Porque o cálculo econômico é impossível no socialismo? - Ancap.Su",
+      "url": "https://www.youtube.com/watch?v=iljf9W2__uo&t=261s"
     },
     {
       "id": 8,
       "categoriaId": 1,
-      "title": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+      "title": "O que é economia? - Ancap.Su",
+      "url": "https://www.youtube.com/watch?v=5vCOhPrlRUs&t=62s"
     },
     {
       "id": 9,
       "categoriaId": 1,
-      "title": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+      "title": "O que são ciclos econômicos? - Ancap.Su",
+      "url": "https://www.youtube.com/watch?v=o3P8g62iPAY"
     },
     {
       "id": 10,
       "categoriaId": 1,
-      "title": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+      "title": "Quem causou a crise de 29? - Ancap.Su",
+      "url": "https://www.youtube.com/watch?v=tUFARUezPQg"
     },
     {
       "id": 11,
-      "categoriaId": 2,
-      "title": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+      "categoriaId": 1,
+      "title": "Sem Estado, quem vai emitir dinheiro? - Ancap.Su",
+      "url": "https://www.youtube.com/watch?v=Ym--Kc_nlco"
     },
     {
       "id": 12,
-      "categoriaId": 2,
-      "title": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+      "categoriaId": 1,
+      "title": "O que diferencia a Escola Austríaca de Economia? - Fernando Ulrich",
+      "url": "https://www.youtube.com/watch?v=i77ZP6tnjAM"
     },
     {
       "id": 13,
       "categoriaId": 2,
-      "title": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+      "title": "A Ética Argumentativa de Hans-Hermann Hoppe - Direito Sem Juridiquês",
+      "url": "https://www.youtube.com/watch?v=gFBL2XPRZik"
     },
     {
       "id": 14,
       "categoriaId": 2,
-      "title": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+      "title": "O que é a ética argumentativa? - Ancap.Su",
+      "url": "https://www.youtube.com/watch?v=sC32x5aqaUo"
     }, 
     {
       "id": 15,
       "categoriaId": 2,
-      "title": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+      "title": "A Ética da Liberdade - Murray Rothbard - Leitura comentada (Introdução) - Ideias Radicais",
+      "url": "https://www.youtube.com/watch?v=QV2w9wOoEVo"
     }
   ]
 }
