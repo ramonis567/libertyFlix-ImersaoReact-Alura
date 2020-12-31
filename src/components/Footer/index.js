@@ -1,5 +1,5 @@
 import React from 'react';
-import { FooterBase } from './styles';
+import { FooterBase, Space } from './styles';
 
 function Footer() {
   return (
@@ -12,8 +12,11 @@ function Footer() {
           alt="Logo 2HR Tech"
         />
       </a>
+      <Space>
+        <div />
+      </Space>
       <p>
-        Editar
+        Soluções criativas em Marketing Digital e Desenvolvimento Web
       </p>
     </FooterBase>
   );
